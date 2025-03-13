@@ -3,29 +3,50 @@ A parametrized functional unit that can be reconfigured into multiple parallel m
 
 ## A Glance at the FP Multiplier Architecture
 
-A Floating-Point (FP) Multiplier is a crucial component in digital systems requiring high-performance arithmetic operations, such as digital signal processing, machine learning, and graphics processing. In VLSI design, an FP multiplier is implemented to perform multiplication of two floating-point numbers, adhering to the IEEE 754 standard. The architecture typically involves three stages: exponent addition, mantissa multiplication, and normalization. Exponent addition handles the biased exponents, while mantissa multiplication uses high-speed techniques like Wallace tree or Booth encoding to optimize the hardware and reduce critical path delay. The normalization stage ensures the result conforms to the IEEE standard by aligning the decimal point. Designing an efficient FP multiplier in VLSI requires optimizing trade-offs between power, performance, and area (PPA), making it a challenging task. Advanced techniques, such as pipelining, clock gating, and approximate computing, are often employed to enhance throughput and energy efficiency in modern ASIC or FPGA implementations.
-
-- Sign Logic
-- Exponent Adder
-- Mantissa Multiplier
-- Normalization
-- Exceptions handler
-
-## Base Paper
-
-This work was referred from architectures proposed in the following paper -:
-
-A. Y. N J and A. V R, "FPGA Implementation of a High Speed Efficient Single Precision Floating Point ALU," 2023 International Conference on Control, Communication and Computing (ICCC), Thiruvananthapuram, India, 2023, pp. 1-5, doi: 10.1109/ICCC57789.2023.10165441. keywords: {Power demand;Program processors;Simulation;Computer architecture;Dynamic range;Hardware;Hardware design languages;IEEE 754;ALU;FPGA;RISC V ISA;Exceptions},
+Project Title: Parametrized Vector Processing Unit for SIMD parallel computations.
+Author: Shaik Maaz Ahmed
+Date: 13/03/2025
+Institution/Organization: National Institute of Technology Andhra Pradesh
+Version: 1.0
 
 
-## Block Diagram of the FP Multiplier 
+## Block Diagram of the ALU
 
  <p align="center">
   <img width="500" height="500" src="/SCHEMATIC AND WAVEFORMS/BLOCK.png">
 </p>
 
-## AMD Xilinx Vivado implementations
-The RTL level design of the multiplier was developed in AMD Xilinx Vivado and functional verification and fpga synthesis was also performed.
+## 1. Overview
+Objective: Design and implement a functional unit that can processes vectors parallelly
+Technology Node: 90nm
+Design Flow: RTL to GDSII using Cadence EDA Tools and AMD Xilinx Vivado
+Target Application: Matrix Computations , ML applications , GPU applications
+
+
+## 2. Project Scope
+Design Goals: Power, Performance, Area (PPA) trade-offs
+Architecture: SIMD , Parallel Processing 
+Supported Operations: 32-bit floating point , 32-bit fixed point
+
+## 3. Workflow
+3.1. RTL Design
+HDL: Verilog 
+Simulation: AMD Xilinx Vivado
+Verification Metrics: Mode based output results
+3.2. Synthesis
+Tool: Cadence Genus
+Library: 90nm standard cell library
+Timing Constraints: Provided in SDC format
+Reports: Area, Timing, Power
+3.3. Place & Route
+Tool: Cadence Innovus
+Floorplan: Aspect ratio - 0.7 , Core Utilization - 70%
+
+## 4. Results
+Timing Summary: Met setup/hold constraints?
+Power Analysis: Dynamic, Static power
+Area Report: Gate count, cell utilization
+Performance Metrics: Throughput, Latency
 
 
 ## Schematic of the FP Multiplier
@@ -40,10 +61,6 @@ The RTL level design of the multiplier was developed in AMD Xilinx Vivado and fu
  <p align="center">
   <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SIMULATION.png">
 </p>
-
-- The 0 - 10 ns for normal multiplication operation
-- The 10 - 50 ns for showing various exception modelled
-- The 50 - 60 ns for multiplication with negative number
 
 
 ## Power Summary of the FP Multiplier
