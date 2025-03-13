@@ -221,9 +221,9 @@ The synthesized design uses 12782 standard cells
 
 ## Acknowledgments
 
-- Dr.Ediga Raghuveera , AdHoc Faculty , NIT AP (mentor)
 - Dr.Kiran Kumar Gurrala , Assistant Professor , NIT AP
 - Dr.Puli Kishore Kumar , Assistant Professor , NIT AP
+- Chaitanya Krishna , PhD , NIT AP
 - Harika Banala , PhD , NIT AP
 
 ## Contact Information
