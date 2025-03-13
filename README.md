@@ -220,7 +220,6 @@ The synthesized design uses 12782 standard cells
 - [2] A. Y. N J and A. V R, "FPGA Implementation of a High Speed Efficient Single Precision Floating Point ALU," 2023 International Conference on Control, Communication and Computing (ICCC), Thiruvananthapuram, India, 2023, pp. 1-5, doi: 10.1109/ICCC57789.2023.10165441. keywords: {Power demand;Program processors;Simulation;Computer architecture;Dynamic range;Hardware;Hardware design languages;IEEE 754;ALU;FPGA;RISC V ISA;Exceptions},
 
 
-
 ## Contributors 
 
 - **Maaz Ahmed**  
@@ -234,4 +233,6 @@ The synthesized design uses 12782 standard cells
 
 ## Contact Information
 
-- Shaik Maaz Ahmed , maazahmed23456@gmail.com
+- Shaik Maaz Ahmed
+- 4th year B.Tech ECE , NIT Andhra Pradesh
+- Mail ID: maazahmed23456@gmail.com
