@@ -13,7 +13,7 @@ A parametrized functional unit that can be reconfigured into multiple parallel m
 ## Block Diagram of the ALU
 
  <p align="center">
-  <img width="500" height="500" src="/Images/Screenshot 2025-03-13 122353.png">
+  <img width="1000" height="500" src="/Images/Screenshot 2025-03-13 122353.png">
 </p>
 
 ## 1. Overview
@@ -43,49 +43,47 @@ A parametrized functional unit that can be reconfigured into multiple parallel m
 - Floorplan: Aspect ratio - 0.7 , Core Utilization - 70%
 
 ## 4. Results
-Timing Summary: Met setup/hold constraints?
-Power Analysis: Dynamic, Static power
-Area Report: Gate count, cell utilization
-Performance Metrics: Throughput, Latency
-
 
 ## RTL Design and Functional Verification
 
 ### Schematic view of VPU
 
  <p align="center">
-  <img width="500" height="500" src="/Images/VPU.png">
+  <img width="800" height="500" src="/Images/VPU.png">
 </p>
 
 
 ### Schematic view of ALU
 
 <p align="center">
-  <img width="500" height="500" src="/Images/ALU.png">
+  <img width="1000" height="500" src="/Images/ALU.png">
 </p>
 
 
 ### Simulation Results
-- **ALU**
+- **ALU Floating Point Multiplication**
  <p align="center">
-  <img width="500" height="500" src="/Images/FP MULT (NEW).png">
+  <img width="1000" height="500" src="/Images/FP MULT (NEW).PNG">
 </p>
 
+- **ALU Integer Multiplication, Addition and Logical AND, OR, XOR**
 <p align="center">
-  <img width="500" height="500" src="/Images/INT MULT , ADD ,AND OR XOR (NEW) ALU.png">
+  <img width="1000" height="500" src="/Images/INT MULT , ADD ,AND OR XOR (NEW) ALU.PNG">
 </p>
 
-**VPU**
+- **VPU Floating Point Multiplication**
 <p align="center">
-  <img width="500" height="500" src="/Images/VPU FP MULT (NEW).png">
+  <img width="1000" height="500" src="/Images/VPU FP MULT (NEW).PNG">
 </p>
 
+- **VPU Integer Multiplication**
 <p align="center">
-  <img width="500" height="500" src="/Images/VPU INT MULT (NEW).png">
+  <img width="1000" height="500" src="/Images/VPU INT MULT (NEW).PNG">
 </p>
 
+- **VPU Dot Porduct**
 <p align="center">
-  <img width="500" height="500" src="/Images/DOT PRODUCT.png">
+  <img width="1000" height="500" src="/Images/DOT PRODUCT.PNG">
 </p>
 
 
@@ -93,62 +91,60 @@ Performance Metrics: Throughput, Latency
 
 ### Netlist View
 
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+<p align="center">
+  <img width="1000" height="500" src="/Images/SYNTHESIZED NETLIST.png">
 </p>
 
 ### Area Report
 
  <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+  <img width="1000" height="500" src="/Images/AREA.png">
 </p>
 
 ### Power Report
 
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+<p align="center">
+  <img width="1000" height="500" src="/Images/POWER.png">
 </p>
 
 ### Timing Report
 
  <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+  <img width="1000" height="500" src="/Images/TIMING.png">
 </p>
 
 ### Gates Report
 
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+<p align="center">
+  <img width="1000" height="500" src="/Images/GATES.png">
 </p>
 
-It shows the FP Multiplier was synthesiszed by ustilisation of only 59 LUT and 2 DSP and 99 I/O ports which is fair utilization.
 
 ## Physical Design
-The design was imported to Openlane on linux and a configuration script was developed which performed the synthesis to gds steps. Openlane is an open-source EDA tools that is used to perfrom the ASIC flow. The design was implemented by leveraging Skywater 130nm pdk.
 
 ### Design Summary
 
  <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+  <img width="1000" height="500" src="/Images/DESIGN SUMMARY (BERFORE IMPLEMENTATION).png">
 </p>
 
 ### Placed Design
 
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+<p align="center">
+  <img width="1000" height="500" src="/Images/PLACED.png">
 </p>
 
 
 ### Routed Design
 
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+<p align="center">
+  <img width="1000" height="500" src="/Images/ROUTED.png">
 </p>
 
 ### Post-Route Timing Report
 
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+<p align="center">
+  <img width="1000" height="500" src="/Images/POST ROUTE TIMING REPORT.png">
 </p>
 
 
