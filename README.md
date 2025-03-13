@@ -29,16 +29,16 @@ A parametrized functional unit that can be reconfigured into multiple parallel m
 - Supported Operations: 32-bit floating point , 32-bit fixed point
 
 ## 3. Workflow
-- **3.1. RTL Design**
+- **RTL Design**
 - HDL: Verilog 
 - Simulation: AMD Xilinx Vivado
 - Verification Metrics: Mode based output results
-- **3.2. Synthesis**
+- **Synthesis**
 - Tool: Cadence Genus
 - Library: 90nm standard cell library
 - Timing Constraints: Provided in SDC format
 - Reports: Area, Timing, Power
-- **3.3. Place & Route**
+- **Place & Route**
 - Tool: Cadence Innovus
 - Floorplan: Aspect ratio - 0.7 , Core Utilization - 70%
 
