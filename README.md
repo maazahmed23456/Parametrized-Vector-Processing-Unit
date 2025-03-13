@@ -13,7 +13,7 @@ A parametrized functional unit that can be reconfigured into multiple parallel m
 ## Block Diagram of the ALU
 
  <p align="center">
-  <img width="500" height="500" src="/SCHEMATIC AND WAVEFORMS/BLOCK.png">
+  <img width="500" height="500" src="/Images/Screenshot 2025-03-13 122353.png">
 </p>
 
 ## 1. Overview
@@ -54,32 +54,40 @@ Performance Metrics: Throughput, Latency
 ### Schematic view of VPU
 
  <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+  <img width="500" height="500" src="/Images/VPU.png">
 </p>
 
 
 ### Schematic view of ALU
 
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SIMULATION.png">
+<p align="center">
+  <img width="500" height="500" src="/Images/ALU.png">
 </p>
 
 
 ### Simulation Results
-
+- **ALU**
  <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/POWER SUMMARY.png">
+  <img width="500" height="500" src="/Images/FP MULT (NEW).png">
 </p>
 
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/POWER SUMMARY.png">
+<p align="center">
+  <img width="500" height="500" src="/Images/INT MULT , ADD ,AND OR XOR (NEW) ALU.png">
 </p>
 
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/POWER SUMMARY.png">
+**VPU**
+<p align="center">
+  <img width="500" height="500" src="/Images/VPU FP MULT (NEW).png">
 </p>
 
-The logic which is the multiplier module consume a power of 0.555 watts 
+<p align="center">
+  <img width="500" height="500" src="/Images/VPU INT MULT (NEW).png">
+</p>
+
+<p align="center">
+  <img width="500" height="500" src="/Images/DOT PRODUCT.png">
+</p>
+
 
 ## Synthesis
 
