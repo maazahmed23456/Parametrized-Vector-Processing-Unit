@@ -3,11 +3,11 @@ A parametrized functional unit that can be reconfigured into multiple parallel m
 
 ## A Glance at the FP Multiplier Architecture
 
-Project Title: Parametrized Vector Processing Unit for SIMD parallel computations.
-Author: Shaik Maaz Ahmed
-Date: 13/03/2025
-Institution/Organization: National Institute of Technology Andhra Pradesh
-Version: 1.0
+- Project Title: Parametrized Vector Processing Unit for SIMD parallel computations.
+- Author: Shaik Maaz Ahmed
+- Date: 13/03/2025
+- Institution/Organization: National Institute of Technology Andhra Pradesh
+- Version: 1.0
 
 
 ## Block Diagram of the ALU
@@ -17,30 +17,30 @@ Version: 1.0
 </p>
 
 ## 1. Overview
-Objective: Design and implement a functional unit that can processes vectors parallelly
-Technology Node: 90nm
-Design Flow: RTL to GDSII using Cadence EDA Tools and AMD Xilinx Vivado
-Target Application: Matrix Computations , ML applications , GPU applications
+- Objective: Design and implement a functional unit that can processes vectors parallelly
+- Technology Node: 90nm
+- Design Flow: RTL to GDSII using Cadence EDA Tools and AMD Xilinx Vivado
+- Target Application: Matrix Computations , ML applications , GPU applications
 
 
 ## 2. Project Scope
-Design Goals: Power, Performance, Area (PPA) trade-offs
-Architecture: SIMD , Parallel Processing 
-Supported Operations: 32-bit floating point , 32-bit fixed point
+- Design Goals: Power, Performance, Area (PPA) trade-offs
+- Architecture: SIMD , Parallel Processing 
+- Supported Operations: 32-bit floating point , 32-bit fixed point
 
 ## 3. Workflow
-3.1. RTL Design
-HDL: Verilog 
-Simulation: AMD Xilinx Vivado
-Verification Metrics: Mode based output results
-3.2. Synthesis
-Tool: Cadence Genus
-Library: 90nm standard cell library
-Timing Constraints: Provided in SDC format
-Reports: Area, Timing, Power
-3.3. Place & Route
-Tool: Cadence Innovus
-Floorplan: Aspect ratio - 0.7 , Core Utilization - 70%
+- **3.1. RTL Design**
+- HDL: Verilog 
+- Simulation: AMD Xilinx Vivado
+- Verification Metrics: Mode based output results
+- **3.2. Synthesis**
+- Tool: Cadence Genus
+- Library: 90nm standard cell library
+- Timing Constraints: Provided in SDC format
+- Reports: Area, Timing, Power
+- **3.3. Place & Route**
+- Tool: Cadence Innovus
+- Floorplan: Aspect ratio - 0.7 , Core Utilization - 70%
 
 ## 4. Results
 Timing Summary: Met setup/hold constraints?
@@ -49,21 +49,31 @@ Area Report: Gate count, cell utilization
 Performance Metrics: Throughput, Latency
 
 
-## Schematic of the FP Multiplier
+## RTL Design and Functional Verification
+
+### Schematic view of VPU
 
  <p align="center">
   <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
 </p>
 
 
-## Simulation of the FP Multiplier
+### Schematic view of ALU
 
  <p align="center">
   <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SIMULATION.png">
 </p>
 
 
-## Power Summary of the FP Multiplier
+### Simulation Results
+
+ <p align="center">
+  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/POWER SUMMARY.png">
+</p>
+
+ <p align="center">
+  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/POWER SUMMARY.png">
+</p>
 
  <p align="center">
   <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/POWER SUMMARY.png">
@@ -71,55 +81,67 @@ Performance Metrics: Throughput, Latency
 
 The logic which is the multiplier module consume a power of 0.555 watts 
 
-## Resource Utilization of the FP Multiplier
+## Synthesis
+
+### Netlist View
 
  <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/RESOURCE UTILIZATION.png">
+  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+</p>
+
+### Area Report
+
+ <p align="center">
+  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+</p>
+
+### Power Report
+
+ <p align="center">
+  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+</p>
+
+### Timing Report
+
+ <p align="center">
+  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+</p>
+
+### Gates Report
+
+ <p align="center">
+  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
 </p>
 
 It shows the FP Multiplier was synthesiszed by ustilisation of only 59 LUT and 2 DSP and 99 I/O ports which is fair utilization.
 
-## Openlane Implementaions
+## Physical Design
 The design was imported to Openlane on linux and a configuration script was developed which performed the synthesis to gds steps. Openlane is an open-source EDA tools that is used to perfrom the ASIC flow. The design was implemented by leveraging Skywater 130nm pdk.
 
-## GDS
+### Design Summary
 
  <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/GDS.png">
+  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
 </p>
 
-## Routed Design
+### Placed Design
 
  <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/ROUTING.png">
-</p>
-
-## Heatmap
-
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/ROUTING HEATMAP.png">
-</p>
-
-## Area Report
-
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/AREA REPORT.png">
-</p>
-
-## Utilization
-
- <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/UTILIZATION.png">
+  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
 </p>
 
 
-## Power Report
+### Routed Design
 
  <p align="center">
-  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/POWER REPORT.png">
+  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
 </p>
 
+### Post-Route Timing Report
 
+ <p align="center">
+  <img width="800" height="500" src="/SCHEMATIC AND WAVEFORMS/SCHEMATIC.png">
+</p>
 
 
 ***************
