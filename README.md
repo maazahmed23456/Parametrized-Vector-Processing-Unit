@@ -159,6 +159,12 @@ The synthesized design consumes 6.22 mW of power
   <img width="1000" height="500" src="/Images/TIMING.png">
 </p>
 
+### Performance
+
+- The VPU achieves a peak throughput of **895 MOPS** (for N=4) at 223 MHz,  
+  equivalent to **57 Gbps of data processing capacity**.  
+- At a 100 MHz clock, the realistic throughput is **400 MOPS** or **25.6 Gbps**.  
+
 ### Gates Report
 The synthesized design uses 12782 standard cells
 
