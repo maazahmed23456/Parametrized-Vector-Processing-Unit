@@ -11,7 +11,7 @@ A parametrized functional unit that can be reconfigured into multiple parallel l
 ## Block Diagram of the ALU
 
  <p align="center">
-  <img width="1000" height="500" src="/Images/Screenshot 2025-03-13 122353.png">
+  <img width="1200" height="500" src="/Images/Screenshot 2025-03-13 122353.png">
 </p>
 
 ## 1. Overview
@@ -99,6 +99,46 @@ A parametrized functional unit that can be reconfigured into multiple parallel l
 
 
 ### Simulation Results
+
+- **General Matrix Multiplication (GEMM)**
+
+### Matrix Multiplication (Hexadecimal Representation)
+
+#### Matrix A:                   
+| 0x1  | 0x2  | 0x3  | 0x4  |
+|------|------|------|------|
+| 0x5  | 0x6  | 0x7  | 0x8  |
+| 0x9  | 0xA  | 0xB  | 0xC  |
+| 0xD  | 0xE  | 0xF  | 0x10 |
+
+#### Matrix B (Transposed):
+| 0x1  | 0x5  | 0x9  | 0xD  |
+|------|------|------|------|
+| 0x2  | 0x6  | 0xA  | 0xE  |
+| 0x3  | 0x7  | 0xB  | 0xF  |
+| 0x4  | 0x8  | 0xC  | 0x10 |
+
+#### Resultant Matrix C:
+| 0x5A  | 0x64  | 0x6E  | 0x78  |
+|------|------|------|------|
+| 0xCA  | 0xE4  | 0xFE  | 0x118 |
+| 0x13A | 0x164 | 0x18E | 0x1B8 |
+| 0x1AA | 0x1E4 | 0x21E | 0x258 |
+
+
+
+<p align="center">
+  <img width="1400" height="500" src="/Images/GEMM.png">
+</p>
+
+<p align="center">
+  <img width="1000" height="500" src="/Images/GEMM 3 BEST.png">
+</p>
+
+- The latency for a dot product operation is **2 cycles**, and an integer multiplication takes **1 cycle**, resulting in a total of **3 cycles** per element.
+
+- For 16 elements, the total execution time is **48 cycles**. Given that the maximum datapath delay is **4.47 ns**, the output can be generated as fast as **48 × 4.47 = 214.56 ns**.
+
 - **ALU Floating Point Multiplication**
  <p align="center">
   <img width="1000" height="500" src="/Images/FP MULT (NEW).PNG">
@@ -156,7 +196,7 @@ The synthesized design consumes 6.22 mW of power
 - Slack: 5,436 ps (No setup violation)
 
  <p align="center">
-  <img width="1000" height="500" src="/Images/TIMING.png">
+  <img width="1200" height="800" src="/Images/TIMING.png">
 </p>
 
 ### Performance
@@ -180,14 +220,13 @@ The synthesized design uses 12782 standard cells
 ### Design Summary
 
  <p align="center">
-  <img width="1000" height="500" src="/Images/DESIGN SUMMARY (BERFORE IMPLEMENTATION).png">
+  <img width="1200" height="800" src="/Images/DESIGN SUMMARY (BERFORE IMPLEMENTATION).png">
 </p>
 
 ### Floorplan
 - Aspect Ratio - 1
 - Core Utilization - 70%
 - Core to I/0 - 15um from all sides
-- 
 
 ### Placed Design
 
@@ -205,7 +244,7 @@ The synthesized design uses 12782 standard cells
 ### Post-Route Timing Report
 
 <p align="center">
-  <img width="1000" height="500" src="/Images/POST ROUTE TIMING REPORT.png">
+  <img width="1200" height="500" src="/Images/POST ROUTE TIMING REPORT.png">
 </p>
 
 
